@@ -1,6 +1,6 @@
 # Varastonhallinta
 Sovellus ladataan omalle koneelle
-   git clone https://gitlab.com/Ervin-Magi/varastonhallinta [kansio]
+   git clone https://github.com/Ervin-Magi/varastonhallinta [kansio]
    cd [kansio]
 Palvelin sovellukseen pitää lisätä .env tiedostoon tietokanta yhteystiedot
 
