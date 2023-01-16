@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * Lisää, poista, muokka tuotteet
+ */
+input {
+  line-height: normal;
+}
+.button {
+  height: 38px;
+  line-height: 38px;
+  border-radius: 19px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+.center {
+position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+}
+/**
+ * Painikeen värit
+ */
+.buttonNew, #some-override .ff-btn {
+  background-color: #65BF73;
+  box-shadow: 0 24px 24px -16px rgba(101, 191, 115, 1);
+}
+
+.buttonEdit, #some-override .ff-btn {
+  background-color: #2097F6;
+  box-shadow: 0 24px 24px -16px rgba(32, 151, 246, 1);
+}
+
+.buttonSave, #some-override .ff-btn {
+  background-color: #FF5A43;
+  box-shadow: 0 24px 24px -16px rgba(255, 90, 67, 1);
+}
+
+.buttonDelete, #some-override .ff-btn {
+  background-color: #DE1306;
+  box-shadow: 0 24px 24px -16px rgba(222, 19, 27, 1);
+}
+
+@media (min-width: 960px) {
+  .button, #some-override .ff-btn {
+    transition: box-shadow 0.25s ease;
+  }
+}
+.button svg, #some-override .ff-btn svg {
+  display: none;
+}
+@media (min-width: 960px) {
+  .button svg, #some-override .ff-btn svg {
+    display: inline-block;
+    margin-left: 12px;
+    transform: translateX(0px);
+    transition: transform 0.25s ease;
+  }
+}
+
+/**
+ * Painikkeen varjo
+ */
+.button:hover, #some-override .ff-btn:hover {
+  box-shadow: 0 12px 24px -16px rgba(117, 78, 0, 0.75);
+}
+.button:hover svg, #some-override .ff-btn:hover svg {
+  transform: translateX(16px);
+}
+
+/**
+ * Vaakasuuntaiset painikkeet
+ */
+ul {
+  list-style: none;
+  margin: 20px 0 30px 5px;
+  padding-left: 0;
+}
+a {text-decoration: none;}
+li{
+  display:inline-block;
+}
+/**
+ * Sivu
+ */
+.Button {
+  background:    #0085ff;
+  background:    linear-gradient(#0085ff, #00ffac);
+  border-radius: 1000px;
+  padding:       20px 45px;
+  color:         #ffffff;
+  display:       inline-block;
+  text-align:    center;
+  box-shadow: 0 24px 24px -16px rgba(0, 255, 172, 1);
+}
+/**
+ * Painikkeen varjo
+ */
+.Button:hover, #some-override .ff-btn:hover {
+  box-shadow: 0 12px 24px -16px rgba(0, 133, 255, 1);
+}
+
+/* Containeri */
+.row {
+  display: flex;
+}
+
+/* Luo kaksi eriarvoista saraketta, jotka ovat vierekkäin */
+.side {
+  flex: 20%;
+  margin: 20px;
+}
+
+/* Responsive taulukko */
+.main {
+  flex: 40%;
+  margin: 20px;
+}
+
+/* Näyttää piilotetun lohkon */
+.nahdaan {
+  display:block;
+}
+
+.eivoinahda {
+  display:none;
+}
+
+.gamutom-esoutasto, .gamutom-esoutasto + label ~ div {
+  display: none;
+}
+
+.gamutom-esoutasto + label, .gamutom-esoutasto:checked + label {
+  font-weight: bold;
+}
+
+.gamutom-esoutasto:checked + label {
+  border-bottom: 0;
+}
+
+.gamutom-esoutasto:checked + label + div {
+  display: block;
+}
+
+@-moz-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1 }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1 }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1 }
+}
+
+.komentas {
+}
+
+/* Jakaa rekisteröintivalikon ja kirjautumisvalikon kahteen puolikkaaseen käyttäjän mukavuuden vuoksi */
+#content {
+  height: 450px;
+  padding: 20px 10% 20px 10%;
+  display: flex;
+}
+
+#left, #right  {
+  flex: 50%;
+}

@@ -1,0 +1,8 @@
+PUT http://localhost:3000/api/products/5f6c8ae74ea7c43470035875
+Content-Type: application/json
+
+{
+    "name": "Macbook",
+    "sku": 113,
+    "amount": 49
+}
